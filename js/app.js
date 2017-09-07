@@ -5,10 +5,9 @@ $('#calendar').fullCalendar({
     eventSources: [
 
         {
-            url: 'retriever.php',
+            url: 'datas.php',
             type: 'POST',
             error: function(e) {
-                alert('Error during fetching datas...');
                 console.log(e);
             },
             textColor: 'black'
