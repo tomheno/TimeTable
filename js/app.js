@@ -46,7 +46,7 @@ footer: {
 		var content =ev[1].replace('<i>','').replace('</i>','');
 	swal({
 	  title: title,
-	  text: '<i class="hour">'+calEvent.start.format("hh:mm")+' - ' + calEvent.end.format("hh:mm") + '</i><br>' + content,
+	  text: '<i class="hour">'+calEvent.start.format("HH:mm")+' - ' + calEvent.end.format("hh:mm") + '</i><br>' + content,
 	  html: true,
 	  confirmButtonText: 'Fermer',
 	  confirmButtonColor: calEvent.backgroundColor
