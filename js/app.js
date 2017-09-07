@@ -56,16 +56,15 @@ footer: {
     eventRender: function (event, element) {
         element.find('.fc-title').html(event.title);
     },
-	
-	eventAfterAllRender: function (view){
-		if(!toolbarMoved){
+
+});
+
+$(document).ready(function(){
+			if(!toolbarMoved){
 		$('#calendar').append('<div class="bottomToolbar"></div>');
-		console.log('rendered');
 		$('.bottomToolbar').append($('.fc-prev-button'));
 		$('.bottomToolbar').append($('.fc-center'));
 				$('.bottomToolbar').append($('.fc-next-button'));
 		toolbarMoved = true;
 		}
-	}
-
 });
