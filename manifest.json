@@ -1,0 +1,20 @@
+{
+    "name": "Emploi du temps",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ad1457",
+    "background_color": "#ad1457",
+    "start_url": "schedule.tom.heneau.lt",
+    "display": "standalone",
+    "orientation": "portrait"
+}
