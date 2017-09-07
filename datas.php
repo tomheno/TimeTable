@@ -8,11 +8,6 @@
     $projectId = 6;
     $firstDate = "2017-04-09";
     $lastDate = "2018-06-30";
-    $univUrl = array(
-        "lyon1" => "http://adelb.univ-lyon1.fr/jsp/custom/modules/plannings/anonymous_cal.jsp",
-        "sainte" => "https://planning.univ-st-etienne.fr/jsp/custom/modules/plannings/anonymous_cal.jsp"
-    );
-    $univID = (isset($_POST['univId']))?$_POST['univId']:"lyon1";
     $file = fopen("https://ade-uga.grenet.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=" . $ressourceID . "&projectId=" . $projectId . "&calType=ical&firstDate=" . $firstDate . "&lastDate=" . $lastDate . "", "r") or exit("Unable to open file!");
 	$edt = array();
     /***
@@ -75,3 +70,5 @@
     header("Content-type: text/json");
     echo json_encode($edt);
     die();
+	
+	?>
