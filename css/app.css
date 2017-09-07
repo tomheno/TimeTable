@@ -131,7 +131,7 @@ body {
     overflow: hidden;
 }
 
-.fc-title {
+.fc-agendaDay-view .fc-title {
     font-size: 1.15rem;
 }
 
