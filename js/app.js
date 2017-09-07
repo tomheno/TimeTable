@@ -1,4 +1,13 @@
 toolbarMoved = false;
+
+function gcd(a, b) {
+    return (b == 0) ? a : gcd(b, a % b);
+}
+
+var w = screen.width;
+var h = screen.height;
+var r = gcd(w, h);
+
 $('#calendar').fullCalendar({
 
 
@@ -9,6 +18,10 @@ $('#calendar').fullCalendar({
             type: 'POST',
             error: function (e) {
                 console.log(e);
+            },
+
+            callback: function (c) {
+                console.log(c);
             },
             textColor: 'black'
         }
@@ -35,7 +48,7 @@ $('#calendar').fullCalendar({
     },
     minTime: "'08:00:00",
     maxTime: "'18:30:00",
-    aspectRatio: 1.7,
+    aspectRatio: 2.5,
 
 
     eventClick: function (calEvent, jsEvent, view) {
@@ -57,6 +70,17 @@ $('#calendar').fullCalendar({
         element.find('.fc-title').html(event.title);
     },
 
+    loading: function (isLoading) {
+        if (isLoading) {
+            $('.spinner').addClass('spinner--visible');
+        } else {
+            $('.spinner').removeClass('spinner--visible');
+        }
+    },
+
+    eventAfterAllRender: function (event, element) {
+        $('.spinner').removeClass('spinner--visible');
+    }
 });
 
 $(document).ready(function () {
@@ -66,5 +90,7 @@ $(document).ready(function () {
         $('.bottomToolbar').append($('.fc-center'));
         $('.bottomToolbar').append($('.fc-next-button'));
         toolbarMoved = true;
+
+        $('.spinner').height($('#calendar').height()-50).css('top', '50px');
     }
 });
