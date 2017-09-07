@@ -91,6 +91,6 @@ $(document).ready(function () {
         $('.bottomToolbar').append($('.fc-next-button'));
         toolbarMoved = true;
 
-        $('.spinner').height($('#calendar').height()-50).css('top', '50px');
+        $('.spinner').height($('#calendar').height()-42).css('top', '48px');
     }
 });
