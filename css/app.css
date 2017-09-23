@@ -95,10 +95,6 @@
 .bottomToolbar {
 
     display: flex;
-    position: fixed;
-    bottom: 1vh;
-    right: 8px;
-    left: 8px;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -205,11 +201,32 @@ body {
     background: rgba(0, 0, 0, .3);
 }
 
-.ui-state-hover{
-    background : #361e25 !important;
+.ui-state-hover {
+    background: #361e25 !important;
     color: white;
 }
 
 button.ui-state-active {
     background: #59323C;
+}
+
+.bottomToolbar {
+    width: 350px;
+    position: relative;
+}
+
+#calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 98vh;
+}
+
+
+@media screen and (min-width: 1100px){
+    #calendar{
+        justify-content: flex-start;
+    }
 }
