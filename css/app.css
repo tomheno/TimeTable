@@ -224,9 +224,12 @@ button.ui-state-active {
     height: 98vh;
 }
 
-
-@media screen and (min-width: 1100px){
-    #calendar{
+@media screen and (min-width: 1100px) {
+    #calendar {
         justify-content: flex-start;
     }
+}
+
+.la-square-loader {
+    color: #59323C;
 }
