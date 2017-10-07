@@ -21,6 +21,7 @@
 .fc-time-grid-event.fc-event {
     border-radius: 0px !important;
     border: none !important;
+	border-top: 1px solid rgba(0,0,0, 0.24) !important;
 }
 
 .fc-classroom {
@@ -69,6 +70,7 @@
 
 .fc-event {
     cursor: pointer;
+	border-top: 1px solid rgba(0,0,0, 0.24) !important;
 }
 
 .fc-toolbar {
@@ -233,3 +235,4 @@ button.ui-state-active {
 .la-square-loader {
     color: #59323C;
 }
+
