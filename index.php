@@ -25,6 +25,7 @@
     <meta name="application-name" content="Emploi du temps">
     <meta name="theme-color" content="#ad1457">
 </head>
+
 <body>
 
 <div id='calendar'></div>
