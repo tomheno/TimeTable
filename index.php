@@ -32,7 +32,8 @@
 
 <div class="spinner">
     <div class="la-square-loader la-2x">
-        <div></div>
+        <div>
+		</div>
     </div>
 </div>
 
