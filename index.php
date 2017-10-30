@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,15 +24,12 @@
     <meta name="application-name" content="Emploi du temps">
     <meta name="theme-color" content="#ad1457">
 </head>
-
 <body>
 
 <div id='calendar'></div>
-
 <div class="spinner">
     <div class="la-square-loader la-2x">
-        <div>
-		</div>
+        <div></div>
     </div>
 </div>
 
@@ -45,5 +41,4 @@
 <script src="js/sweetalert.min.js"></script>
 
 </body>
-
 </html>
