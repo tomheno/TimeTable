@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +28,7 @@
 <body>
 
 <div id='calendar'></div>
+
 <div class="spinner">
     <div class="la-square-loader la-2x">
         <div></div>
