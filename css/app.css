@@ -131,11 +131,11 @@ body {
 }
 
 .fc-agendaDay-view .fc-title {
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 .fc-title i {
-    font-size: 1rem;
+    font-size: .95rem;
 }
 
 .ui-button {
@@ -235,5 +235,10 @@ button.ui-state-active {
 
 .la-square-loader {
     color: #59323C;
+}
+
+
+.ui-widget-header {
+    width: 0 !important;
 }
 
