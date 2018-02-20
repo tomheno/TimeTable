@@ -23,6 +23,7 @@
     <meta name="apple-mobile-web-app-title" content="Emploi du temps">
     <meta name="application-name" content="Emploi du temps">
     <meta name="theme-color" content="#ad1457">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
 

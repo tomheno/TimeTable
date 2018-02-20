@@ -35,7 +35,7 @@
 }
 
 .fc-view {
-    min-width: 300px !important;
+    min-width: 94vw !important;
 }
 
 .fc-time-grid-container {
@@ -127,6 +127,7 @@ body {
     margin-bottom: 0;
     height: 100vh;
     overflow: hidden;
+    margin: 0 !important;
 }
 
 .fc-agendaDay-view .fc-title {
@@ -223,7 +224,7 @@ button.ui-state-active {
     align-items: center;
     align-content: center;
     flex-direction: column;
-    height: 98vh;
+    height: 95vh;
 }
 
 @media screen and (min-width: 1100px) {
