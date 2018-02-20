@@ -131,7 +131,7 @@ body {
 }
 
 .fc-agendaDay-view .fc-title {
-    font-size: 1rem;
+    font-size: .9rem !important;
 }
 
 .fc-title i {
@@ -238,7 +238,7 @@ button.ui-state-active {
 }
 
 
-.ui-widget-header {
+.fc-axis  {
     width: 0 !important;
 }
 
