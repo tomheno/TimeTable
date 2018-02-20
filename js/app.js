@@ -145,7 +145,7 @@ function swipedetect(el, callback) {
     }, false)
 }
 
-var el = document.getElementById('calendar');
+var el = $('.fc-view');
 swipedetect(el, function (swipedir) {
     if (swipedir === 'right') {
         $('#calendar').fullCalendar('prev');
