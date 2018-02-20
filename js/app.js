@@ -145,13 +145,13 @@ function swipedetect(el, callback) {
     }, false)
 }
 
-var el = $('.fc-view');
+var el = document.getElementsByClassName('fc-view')[0];
 swipedetect(el, function (swipedir) {
     if (swipedir === 'right') {
         $('#calendar').fullCalendar('prev');
         console.log('prev');
     }
-    else if (swipedir === 'left') {
+    else if (swipedir === 'left'){
         $('#calendar').fullCalendar('next');
         console.log('next');
     }
