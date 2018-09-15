@@ -6,10 +6,13 @@
     date_default_timezone_set('Europe/Paris');
     $ressourceID = 14590;
     $projectId = 2;
-    $firstDate = "2017-04-09";
-    $lastDate = "2018-06-30";
+    $now = new DateTime();
+    $firstDate =  academicYear($now)[0] . "-09-03";
+    $lastDate = academicYear($now)[1] ."-06-30";
+
     $file = fopen("https://ade-uga.grenet.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=" . $ressourceID . "&projectId=" . $projectId . "&calType=ical&firstDate=" . $firstDate . "&lastDate=" . $lastDate . "", "r") or exit("Unable to open file!");
-	$edt = array();
+
+    $edt = array();
     /***
         A row corresponds to :
             title -> title + room
@@ -25,9 +28,11 @@
     $colors = array_merge($colors,$colors);
     $colors = array_merge($colors,$colors);
     $current = -1;
-    while(!feof($file)){
+
+        while(!feof($file)){
         $line = fgets($file); // separate the ""
         $l = explode(':', $line);
+
 		if(isset($l[1])){
 			        $description = trim($l[1]); // debug \n\r ... of the line
         // Create a new row
@@ -73,6 +78,15 @@
     fclose($file);
     header("Content-type: text/json");
     echo json_encode($edt);
-    die();
 
-	?>
+    
+    function academicYear(DateTime $userDate) {
+        $currentYear = $userDate->format('Y');
+        $cutoff = new DateTime($userDate->format('Y') . '/07/31 23:59:59');
+        if ($userDate < $cutoff) {
+            return ($currentYear-1) . '/' . $currentYear;
+        }
+        return [$currentYear, strval($currentYear+1)];
+    }
+    ?>
+
