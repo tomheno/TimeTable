@@ -4,8 +4,8 @@
         (Licensed under Creative Commons CC-BY-NC)
     */
     date_default_timezone_set('Europe/Paris');
-    $ressourceID = 626;
-    $projectId = 6;
+    $ressourceID = 14590;
+    $projectId = 2;
     $firstDate = "2017-04-09";
     $lastDate = "2018-06-30";
     $file = fopen("https://ade-uga.grenet.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=" . $ressourceID . "&projectId=" . $projectId . "&calType=ical&firstDate=" . $firstDate . "&lastDate=" . $lastDate . "", "r") or exit("Unable to open file!");
